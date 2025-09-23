@@ -12,8 +12,8 @@
     <h1>User Details</h1>
     @if($user)
         <p><strong>Name:</strong> {{ $user->name }}</p>
-        <p><strong>Email:</strong> {{ $user->email }}</p>
-        <p><strong>Joined:</strong> {{ $user->created_at->format('M d, Y') }}</p>
+        {{-- <p><strong>Email:</strong> {{ $user->email }}</p>
+        <p><strong>Joined:</strong> {{ $user->created_at->format('M d, Y') }}</p> --}}
     @else
         <p>No user found.</p>
     @endif
