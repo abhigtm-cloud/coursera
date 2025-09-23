@@ -24,9 +24,9 @@ class CheckMid
         // return response('Middleware is working!', 200);
         Log::debug($request->header());
         $ua = $request->header("user-agent");
-        if(str_contains($ua,"Mozilla")){
-            return response("This user is not permitted to access the application");
-        }
+        // if(str_contains($ua,"Mozilla")){
+        //     return response("This user is not permitted to access the application");
+        // }
         return $next($request);
     }
 }
