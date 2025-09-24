@@ -15,6 +15,11 @@ return Application::configure(basePath: dirname(__DIR__))
         // Register global middleware
         // $middleware->append(\App\Http\Middleware\YourMiddleware::class);
         
+        // Exclude specific routes from CSRF protection
+        $middleware->validateCsrfTokens(except: [
+            'store'
+        ]);
+        
         // Register route middleware with alias
         $middleware->alias([
             'CheckMid' => \App\Http\Middleware\CheckMid::class,
