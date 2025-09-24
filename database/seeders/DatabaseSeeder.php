@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Course::create([
-            'name' => 'Test Course',
+            'name' => 'abhinav',
         ]);
 
 
